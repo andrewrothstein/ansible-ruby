@@ -1,0 +1,8 @@
+---
+- name: (Fedora) install ruby...
+  when: ansible_distribution == "Fedora"
+  environment: proxy_env
+  yum: name='{{item}}' state=present
+  with_items:
+    - ruby
+    - ruby-devel
