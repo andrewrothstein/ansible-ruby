@@ -1,0 +1,4 @@
+---
+ruby_pkgs:
+  - ruby
+  - ruby-dev
