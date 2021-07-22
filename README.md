@@ -1,6 +1,6 @@
 andrewrothstein.ruby
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-ruby.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-ruby)
+![Build Status](https://github.com/andrewrothstein/ansible-ruby/actions/workflows/build.yml/badge.svg)
 
 Installs ruby via system packages
 
