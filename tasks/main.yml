@@ -10,7 +10,7 @@
       paths:
         - '{{ role_path }}/vars'
 - name: install pkgs...
-  become: yes
+  become: true
   become_user: root
   package:
     name: '{{ ruby_pkgs }}'
