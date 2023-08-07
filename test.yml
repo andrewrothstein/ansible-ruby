@@ -1,4 +1,10 @@
 ---
 - hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - command: ruby --version
+      register: ruby_test_output
+    - name: ruby --version
+      debug:
+        msg: '{{ ruby_test_output.stdout }}'
