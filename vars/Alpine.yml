@@ -1,4 +1,4 @@
 ---
 ruby_pkgs:
-  - ruby-full
+  - ruby
   - ruby-dev
