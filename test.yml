@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.ruby
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: ruby --version
+    - name: Executing 'ruby --version'
+      ansible.builtin.command: ruby --version
+      changed_when: false
       register: ruby_test_output
-    - name: ruby --version
-      debug:
+    - name: Output of 'ruby --version'
+      ansible.builtin.debug:
         msg: '{{ ruby_test_output.stdout }}'
